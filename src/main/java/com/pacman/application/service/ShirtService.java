@@ -31,8 +31,8 @@ public class ShirtService implements SortShirtsUseCase {
 
     private HashMap<SortingStrategyVO, Double> getWeights(WeightSortShirtsDTO weightSortShirtsDto){
         HashMap<SortingStrategyVO, Double> pesos = new HashMap<>();
-        pesos.put(SortingStrategyVO.SALES_UNITS, weightSortShirtsDto.salesUnitsWeight());
-        pesos.put(SortingStrategyVO.STOCK, weightSortShirtsDto.stockWeight());
+        pesos.put(SortingStrategyVO.SALES_UNITS, weightSortShirtsDto.salesUnitsWeight() != null ? weightSortShirtsDto.salesUnitsWeight() : 0.0);
+        pesos.put(SortingStrategyVO.STOCK, weightSortShirtsDto.stockWeight() != null ? weightSortShirtsDto.stockWeight() : 0.0);
         return pesos;
     }
 }

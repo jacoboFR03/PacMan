@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 	info = @Info(
 		title = "PACMAN API",
 		version = "1.0.0",
-		description = "API para ordenar camisetas en base a múltiples criterios ponderados."
+		description = "API para ordenar camisetas en base a múltiples criterios."
 	),
 	servers = {
 		@Server(url = "http://localhost:8080/pacman")

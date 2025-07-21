@@ -35,7 +35,12 @@ public class ShirtController {
         @ApiResponse(responseCode = "400", description = "Petición inválida", content = @Content),
         @ApiResponse(responseCode = "500", description = "Error interno del servidor", content = @Content)
     })
-    public List<ShirtDTO> sortShirts(@RequestBody WeightSortShirtsDTO weightSortShirtsDto) {
+    public List<ShirtDTO> sortShirts(
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(
+            description = "Pesos de los criterios",
+            required = true,
+            content = @Content(schema = @Schema(implementation = WeightSortShirtsDTO.class))
+        )@RequestBody WeightSortShirtsDTO weightSortShirtsDto) {
         return this.sortShirtsUseCase.sortShirts(weightSortShirtsDto);
     }
 }

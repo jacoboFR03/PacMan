@@ -24,11 +24,6 @@ public class SortShirtService {
             strategy.setWeight(weights.get(strategy.getStrategyId()));
             return strategy.evaluate(shirt);
         }).reduce(0.0, Double::sum);
-
-//        return this.strategies.stream().mapToDouble(c -> {
-//            c.setPeso(pesos.get(c.getStrategyId()));
-//            return c.evaluar(shirt);
-//        }).sum();
     }
 
 }
