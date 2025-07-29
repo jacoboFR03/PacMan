@@ -1,8 +1,8 @@
-package com.pacman.infrastructure.in;
+package com.pacman.infrastructure.in.rest;
 
 import com.pacman.application.port.in.SortShirtsUseCase;
-import com.pacman.infrastructure.in.dto.ShirtDTO;
-import com.pacman.infrastructure.in.dto.WeightSortShirtsDTO;
+import com.pacman.infrastructure.in.rest.dto.ShirtDTO;
+import com.pacman.infrastructure.in.rest.dto.WeightSortShirtsDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

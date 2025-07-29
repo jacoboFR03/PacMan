@@ -1,4 +1,4 @@
-package com.pacman.infrastructure.in.dto;
+package com.pacman.infrastructure.in.rest.dto;
 
 public record ShirtDTO(int id, String name) {
 }

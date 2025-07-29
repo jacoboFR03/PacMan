@@ -7,15 +7,13 @@ import com.pacman.domain.model.SortingStrategyVO;
 import com.pacman.domain.service.SortShirtService;
 import com.pacman.domain.service.criterio.SalesUnitsStrategy;
 import com.pacman.domain.service.criterio.SortingStrategy;
-import com.pacman.infrastructure.in.dto.ShirtDTO;
-import com.pacman.infrastructure.in.dto.WeightSortShirtsDTO;
+import com.pacman.infrastructure.in.rest.dto.ShirtDTO;
+import com.pacman.infrastructure.in.rest.dto.WeightSortShirtsDTO;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;

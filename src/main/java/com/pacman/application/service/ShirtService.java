@@ -5,8 +5,8 @@ import com.pacman.application.port.out.ShirtsRepositoryPort;
 import com.pacman.domain.model.Shirt;
 import com.pacman.domain.model.SortingStrategyVO;
 import com.pacman.domain.service.SortShirtService;
-import com.pacman.infrastructure.in.dto.ShirtDTO;
-import com.pacman.infrastructure.in.dto.WeightSortShirtsDTO;
+import com.pacman.infrastructure.in.rest.dto.ShirtDTO;
+import com.pacman.infrastructure.in.rest.dto.WeightSortShirtsDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

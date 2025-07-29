@@ -2,9 +2,11 @@ package com.pacman.pacman.infraestructure;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pacman.application.port.in.SortShirtsUseCase;
-import com.pacman.infrastructure.in.ShirtController;
-import com.pacman.infrastructure.in.dto.ShirtDTO;
-import com.pacman.infrastructure.in.dto.WeightSortShirtsDTO;
+import com.pacman.application.port.out.ShirtsRepositoryPort;
+import com.pacman.domain.service.SortShirtService;
+import com.pacman.infrastructure.in.rest.ShirtController;
+import com.pacman.infrastructure.in.rest.dto.ShirtDTO;
+import com.pacman.infrastructure.in.rest.dto.WeightSortShirtsDTO;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
